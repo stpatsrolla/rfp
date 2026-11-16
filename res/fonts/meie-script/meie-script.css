@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Meie Script';
+  font-stretch: 100%;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./MeieScript-Regular.ttf') format('truetype');
+}
