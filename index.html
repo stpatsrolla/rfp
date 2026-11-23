@@ -74,9 +74,12 @@
                     <h3 class="flex-fill">Recent Changes</h3>
                     <button type="button" class="underlined" onclick="closeChangelogModal()">X</button>
                 </div>
-                <ul>
-                    <li>This is the first release. Welcome to the new software!</li>
-                </ul>
+                <p>Last Update: Nov. 23, 2026</p>
+                <p>
+                    <ul>
+                        <li>Added "Pay this bill (attached)" as a possible order method.</li>
+                    </ul>
+                </p>
             </div>
             <br>
             <div class="flex centered">
@@ -206,7 +209,7 @@
                             <input type="radio" name="order_method" value="pay_for_me" onchange="togglePaymentFields()">
                             <span>Place this order for me</span>
                         </label>
-                    </div>  
+                    </div>
 
                     <hr class="dotted light">
 
@@ -220,6 +223,15 @@
                     <div class="flex col wide start" style="margin-left: 2ch;">
                         <label for="payee_name">Make Payable To:</label>
                         <input type="text" id="payee_name" name="payee_name" placeholder="e.g. Jane Doe or Vendor Name" disabled>
+                    </div>
+
+                    <hr class="dotted light">
+
+                    <div style="margin-bottom:0.5em;">
+                        <label>
+                            <input type="radio" name="order_method" value="pay_bill_for_me" onchange="togglePaymentFields()">
+                            <span>Pay This Bill &lpar;Attached&rpar;</span>
+                        </label>
                     </div>
                 </div>
             </section>
@@ -528,7 +540,7 @@
 
         <!-- Document Footer -->
         <footer>
-            <p>St. Patrick Catholic Church & School • Financial Control & Purchasing System • Revision 1</p>
+            <p>St. Patrick Catholic Church & School • Financial Control & Purchasing System • Revision 2</p>
         </footer>
 
         <!-- Attached receipts, rendered one page per sheet. Only visible when printing. -->
